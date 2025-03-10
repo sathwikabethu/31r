@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;
+    ">
+    <title>positins</title>
+    <style>
+        div{
+            position: relative;
+            height: 600px;
+            width: 500px;
+            border: 5px solid darkblue;
+        }
+        img{
+            position: absolute;
+            z-index: 1;
+        }
+        #img1{
+            top:0;
+            left: 0;
+        }
+        #img2{
+            top:0;
+            right: 0;
+        }
+        #img3{
+            bottom:0;
+            left: 0;
+        }
+        #img4{
+            bottom:0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="../../day4/css.jpeg" id="img1"  alt="">
+        <img src="../../day4/css.jpeg" id="img2" alt="">
+        <img src="../../day4/css.jpeg" id="img3" alt="">
+        <img src="../../day4/css.jpeg" id="img4" alt="">
+    </div>
+</body>
+</html>
