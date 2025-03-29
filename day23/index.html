@@ -3,109 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <style>
-    /* .container1 {
-      width: 500px;
-      height: 600px;
-      background-color: lightblue;
-      margin: auto;
-      overflow: hidden;
-    }
-    .container1 > button {
-      background-color: rgb(78, 134, 155);
-      color: aliceblue;
-      box-shadow: none;
-    }
-    .container2 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 35%;
-    }
-    img {
-      width: 200px;
-      height: 250px;
-      transition: transform 2s ease;
-    } */
-    /* #btn1:hover ~ div > img {
-      transform: translate(200px);
-      transition: all 2s ease 0s;
-    }
-    #btn2:hover ~ div > img {
-      transform: scale(2.8);
-      transition: all 2s ease 0s;
-    }
-    #btn3:hover ~ div .container2 img {
-      transform: rotate(360deg);
-      transition: all 2s ease 0s;
-    }
-    #btn4:hover ~ div > img {
-      transform: skew(60deg);
-      transition: all 2s ease 0s;
-    }
-    #btn4:hover+img{
-        transform: skew(60deg);
-        transition: all 2s ease 0s;
-    } */
-    .container1 {
-            width: 500px;
-            height: 600px;
-            background-color: lightblue;
-            margin: auto;
-            overflow: hidden;
-            text-align: center;
-            padding-top: 20px;
-        }
-        .buttons button {
-            background-color: rgb(78, 134, 155);
-            color: aliceblue;
-            box-shadow: none;
-            margin: 5px;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-        }
-        .container2 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 50px;
-            transition: transform 2s ease;
-        }
-        img {
-            width: 200px;
-            height: 250px;
-            transition: all 2s ease;
-        }
-         #btn1:hover ~ .container2 img {
-            transform: translateX(200px);
-            transition: all 2s ease 0s
+    <title>Transformations</title>
+    <style>
+      .container1 {
+        width: 500px;
+        height: 600px;
+        background-color: lightblue;
+        margin: auto;
+        overflow: hidden;
+        text-align: center;
+        padding-top: 20px;
+      }
+      /* .container1 > button {
+        background-color: rgb(78, 134, 155);
+        color: aliceblue;
+        box-shadow: none;
+        margin: 5px;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+      } */
+      .container2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+      }
+      img {
+        width: 200px;
+        height: 250px;
+        transition: all 2s ease;
+      }
+      #btn1:hover ~ .container2 img {
+        transform: translateX(100px);
+      }
 
-        }
-        #btn2:hover ~ .container2 img {
-            transform: scale(2.8);
-        }
-        #btn3:hover ~ .container2 {
-            transform: rotate(360deg);
-        }
-        #btn4:hover ~ .container2>img {
-            transform: skewX(30deg);
-        }
-    
-  </style>
+      #btn2:hover ~ .container2 img {
+        transform: scale(1.8);
+      }
+
+      #btn3:hover ~ .container2 img {
+        transform: rotate(60deg);
+      }
+
+      #btn4:hover ~ .container2 img {
+        transform: skewX(30deg);
+      }
+    </style>
+  </head>
   <body>
     <div class="container1">
-      <div class="buttons">
-        <button id="btn1">translate</button>
-        <button id="btn2">scale</button>
-        <button id="btn3">rotate</button>
-        <button id="btn4">skew</button>
-      </div>
+      <button id="btn1">Translate</button>
+      <button id="btn2">Scale</button>
+      <button id="btn3">Rotate</button>
+      <button id="btn4">Skew</button>
+      
       <div class="container2">
-        <img src="../day13/food1.jpg" alt="" />
+        <img src="../day13/food1.jpg" alt="Sample Image" />
       </div>
     </div>
   </body>
 </html>
+
