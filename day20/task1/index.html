@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: auto auto;
+            margin: 100px;
+            gap: 50px 100px;
+        }
+        .child{
+            display: grid;
+           justify-content: end;
+           box-shadow: 2px 4px 25px 1px rgb(203, 195, 195);
+        }
+        .row4{
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(190, 187, 187);
+        }
+        .row1{
+            display: flex;
+            justify-content: center;
+        }
+        .row2{
+            font-size: 30px;
+            text-align: center;
+        }
+        .row3{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child">
+            <div class="row1"><img src="../day4/angularjs.png" alt="" width="20%" height="200px"></div>
+        <div class="row2" ><strong>Angular</strong></div>
+        <div class="row3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam amet odit soluta nobis cumque! Ex sed ullam vitae. A, architecto!</p></div>
+        <div class="row4">CONTACT</div>
+    </div>
+        <div class="child">
+            <div class="row1"><img src="../day4/css.jpeg" alt="" width="20%" height="200px"></div>
+            <div class="row2" ><strong>CSS</strong></div>
+            <div class="row3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam amet odit soluta nobis cumque! Ex sed ullam vitae. A, architecto!</p></div>
+            <div class="row4">CONTACT</div>
+        </div>
+        <div class="child">
+            <div class="row1"><img src="../day4/Bootstrap.png" alt="" width="20%" height="200px"></div>
+            <div class="row2" ><strong>Bootstrap</strong></div>
+            <div class="row3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam amet odit soluta nobis cumque! Ex sed ullam vitae. A, architecto!</p></div>
+            <div class="row4">CONTACT</div>
+        </div>
+        <div class="child">
+            <div class="row1"><img src="../day4/django.jpeg" alt="" width="20%" height="200px"></div>
+        <div class="row2" ><strong>django</strong></div>
+        <div class="row3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam amet odit soluta nobis cumque! Ex sed ullam vitae. A, architecto!</p></div>
+        <div class="row4">CONTACT</div>
+        </div>
+
+    </div>
+</body>
+</html>

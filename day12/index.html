@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inspect box</title>
+    <style>
+      .margin {
+        height: 395px;
+        width: 500px;
+        margin: 100px;
+        padding-left: 10px;
+        border: 3px dashed black;
+      }
+      .border {
+        height: 317px;
+        width: 400px;
+        margin: 20px;
+        padding-left: 10px;
+        border: 2px solid black;
+        margin-left: 37px;
+      }
+      .padding {
+        height: 233px;
+        width: 300px;
+        margin: 20px;
+        margin-left: 50px;
+        padding-left: 10px;
+        border: 2px dashed black;
+      }
+      .content {
+        height: 77px;
+        width: 200px;
+        margin: 40px;
+        margin-top: 50px;
+        padding-left: 10px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="margin"
+      style="background-color: lightcoral; margin: 2px solid black"
+    >
+      margin
+      <div class="border" style="background-color: lightgoldenrodyellow">
+        border
+        <div class="padding" style="background-color: lightgreen">
+          padding
+          <div class="content" style="background-color: lightblue">content</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

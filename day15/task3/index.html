@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SB architectures</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        height: 40px;
+        width: 100%;
+        padding-top: 12px;
+        background-color: #001f5e;
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        z-index: 1;
+        
+      }
+      nav a{
+        text-decoration: none;
+        margin: 10px 70px;
+        color: rgba(0, 0, 0, 0.652);
+        color: aliceblue;
+        
+             }
+      
+      a:visited{
+        color: rgb(138, 167, 216);
+      }
+      #banner {
+        margin: 15px;
+        position: relative;
+        width: 95vw;
+        align-items: center;
+      }
+      #banner > img {
+        height: 500px;
+        width: 100%;
+        display: inline-block;
+        position: relative;
+      }
+      .sb {
+        
+        font-size: 64px;
+        padding: 12px;
+        color: rgb(239, 237, 248);
+        background-color: rgb(182, 181, 181);
+      }
+      .text_overlay {
+        position: absolute;
+        top: 250px;
+        left: 600px;
+        color: rgb(61, 56, 56);
+        display: flex;
+        justify-content: space-between;
+      }
+      .name {
+        font-size: 32px;
+        margin: 25px;
+      }
+      #projects {
+        margin-left: 100px;
+        align-items: center;
+        padding: 12px;
+        width: 90vw;
+        position: relative;
+      }
+      h2{
+        background-color: #fff;
+        height: 36px;
+      }
+      #projects > img {
+        width: 299px;
+        height: 200px;
+        margin: 2px;
+      }
+      .image>img{
+        width: 200px;
+        height: 200px;
+       
+      }
+      .row1{
+        display: flex;
+      }
+      .row2{
+        display: flex;
+      }
+      .image{
+        position: relative;
+      }
+      .image img{
+        width: 300px;
+        height: 200px;
+        padding: 12px;
+      }
+      .txt{
+        position: absolute;
+        background-color: silver;
+        padding: 5px;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        margin: 12px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="links">
+      <a href="#">SB architects</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      </div>
+    </nav>
+    <div id="banner">
+      <img src="images/banner.jpg" alt="" />
+      <div class="text_overlay">
+        <p>
+          <div class="sb">SB</div>
+          <div class="name">Architects</div>
+        </p>
+      </div>
+    </div>
+    <div id="projects">
+      <h2>Projects</h2>
+        <div class="row1">
+        <div class="image">
+          <img src="images/house1.jpg" alt="" />
+          <div class="txt ">house 1</div>
+        </div>
+      <div class="image">
+        <img src="images/house3.jpeg" alt="" />
+        <div class="txt">house 2</div>
+      </div>
+      <div class="image">
+        <img src="images/house4.jpg" alt="" />
+      <div class="txt">house 3</div>
+    </div>
+    <div class="image">
+      <img src="images/house7.jpg" alt="" />
+      <div class="txt">house 4</div>
+    </div>
+  </div>
+  <div class="row2">
+    <div class="image">
+      <img src="images/house5.jpg" alt="" />
+      <div class="txt">house 5</div>
+    </div>
+    <div class="image">
+      <img src="images/house8.jpg" alt="" />
+    <div class="txt">house 6</div>
+  </div>
+  <div class="image">
+     <img src="images/house6.jpg" alt="" />
+    <div class="txt">house 7</div>
+  </div>
+  <div class="image">
+    <img src="images/house1.jpg" alt="" />
+      <div class="txt">house 8</div>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
