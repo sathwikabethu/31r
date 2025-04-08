@@ -10,7 +10,7 @@
             margin: 0;
             box-sizing: border-box;
         }
-        table{
+        /* table{
             height: 660px;
             width: 50vw;
             align-items: center;
@@ -45,14 +45,28 @@
         }
         #row8> td:nth-child(odd){
             background-color: black;
-        }
+        } */
+        td {
+                width: 80px;
+                height: 80px;
+                text-align: center;
+                font-size: 40px;
+            }
+
+            tr:nth-child(odd) td:nth-child(even),
+            tr:nth-child(even) td:nth-child(odd) {
+                background-color: black;
+                color: white; 
+            }
+
+
         
     </style>
 </head>
-<body>
-    <table >
+<body><center>
+    <table border="1" cellspacing="0" align="center" >
         <tr id="row1">
-            <td></td>
+            <td>&#9812</td>
             <td></td>
             <td></td>
             <td></td>
@@ -132,5 +146,6 @@
             <td></td>
         </tr>
     </table>
+</center>
 </body>
 </html>
