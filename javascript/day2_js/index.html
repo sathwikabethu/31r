@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 2 of js series
+    </title>
+</head>
+<body>
+    <script>
+        let num=+prompt("enter number:");
+        let a=(num%2==0)? "even":"odd";
+        console.log(a);
+        let yourAge=+prompt("enter your age:");
+        let b=(yourAge>=18)?"major":"minor";
+        console.log(b);
+        let value=+prompt("enter a value between 0 to 100");
+        let c=(value>=90)?"A":(value>=75)?"B":(value>= 60)?"C":(value>= 45)?"D":"F";
+        console.log(c);
+        let temp=+prompt("enter the temperature:");
+        let d=(temp>30)?"Hot":(temp>=20 && temp<=30)?"Warm":(temp>10 && temp<20)?"Cool":"Cold";
+        console.log(d);
+        let age=+prompt("enter age");
+        let e=(age<=12)?"child":(age>=13 && age<=19)?"Teen":(age>=20 && age<=64)?"adult":"senior";
+        console.log(e);
+        
+        
+    </script>
+</body>
+</html>

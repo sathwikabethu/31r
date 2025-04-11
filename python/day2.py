@@ -38,3 +38,6 @@ print(t[2:4])
 
 print(list(range(0,100)))
 print(list(range(100,0,-1)))
+# abc="10"
+# cde="20" 
+# print(abc-cde)
