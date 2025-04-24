@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+    <a href="#home" class="nav-btn-home">Home</a>
+    <a href="#about" class="nav-btn-about">About</a>
+    <a href="#menu" class="nav-btn-menu">Menu</a>
+    <a href="#where" class="nav-btn-where">Where</a>
+</nav>
+    <div class="banner">
+        <img src="coffee banner.jpg" alt="an image of a coffee banner" id="home">
+    </div>
+<section class="about-section" id="about">
+        <h2>About Our Cafe</h2>
+        <img src="coffee shop img.jpg" alt="Coffee Cup" class="about-img" style="width:100px; margin-bottom:1rem;">
+        <blockquote class="about-tagline">“A sip of happiness in every cup.”</blockquote>
+        <p>
+            Welcome to Coffee House, your cozy neighborhood spot for the finest brews and delicious treats. Our cafe is dedicated to serving freshly roasted coffee, homemade pastries, and a warm, inviting atmosphere. Whether you're here to catch up with friends, work, or simply relax, we strive to make every visit special. Enjoy our selection of specialty drinks and discover your new favorite coffee experience!
+        </p>
+        <div class="about-details">
+            <div class="about-hours">
+                <strong>Opening Hours:</strong><br>
+                Mon-Fri: 7:00 AM – 8:00 PM<br>
+                Sat-Sun: 8:00 AM – 10:00 PM
+            </div>
+            <div class="about-address" style="margin-top:1rem;">
+                <strong>Address:</strong><br>
+                123 Coffee Lane, Brewtown, 456789
+            </div>
+        </div>
+    </section>
+</section>
+
+<section class="menu-section" id="menu">
+    <h2>Menu</h2>
+    <div class="menu-card">
+        <input type="radio" name="menu-tab" id="eat-tab" class="menu-radio" checked>
+        <input type="radio" name="menu-tab" id="drink-tab" class="menu-radio">
+        <div class="menu-tabs">
+            <label for="eat-tab" class="menu-tab-label">Eat</label>
+            <label for="drink-tab" class="menu-tab-label">Drink</label>
+        </div>
+        <div class="menu-content eat-menu">
+            <ul>
+                <li>
+                    <strong>Croissant</strong><br>
+                    Flaky, buttery French pastry, perfect for breakfast or a snack.
+                </li>
+                <li>
+                    <strong>Muffin</strong><br>
+                    Soft and moist, available in blueberry, chocolate chip, and banana nut.
+                </li>
+                <li>
+                    <strong>Bagel</strong><br>
+                    Chewy and delicious, served toasted with cream cheese or butter.
+                </li>
+                <li>
+                    <strong>Sandwich</strong><br>
+                    Freshly made with your choice of fillings: veggies, cheese, or chicken.
+                </li>
+            </ul>
+        </div>
+        <div class="menu-content drink-menu">
+            <ul>
+                <li>
+                    <strong>Espresso</strong><br>
+                    Rich and intense shot of coffee, the base for all our drinks.
+                </li>
+                <li>
+                    <strong>Cappuccino</strong><br>
+                    Espresso with steamed milk and a thick layer of foam.
+                </li>
+                <li>
+                    <strong>Latte</strong><br>
+                    Smooth blend of espresso and steamed milk, lightly topped with foam.
+                </li>
+                <li>
+                    <strong>Mocha</strong><br>
+                    Espresso, chocolate, and steamed milk, finished with whipped cream.
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="where-section" id="where">
+    <h2>Where to Find Us</h2>
+    <img src="cafe street view.jpg" alt="City view" class="where-img">
+    <p class="where-desc">
+        We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggest criteria of them all, both look and taste.<br>
+        Reserve a table, ask for today's special or just send us a message:
+    </p>
+    <form class="where-form">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="people">How many people</label>
+            <input type="number" id="people" name="people" min="1" required>
+        </div>
+        <div class="form-group">
+            <label for="date">Date & Time</label>
+            <input type="datetime-local" id="date" name="date" value="2020-11-16T20:00">
+        </div>
+        <div class="form-group">
+            <label for="message">Message / Special requirements</label>
+            <textarea id="message" name="message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="form-btn">SEND MESSAGE</button>
+    </form>
+</section>
+
+
+</body>
+</html>

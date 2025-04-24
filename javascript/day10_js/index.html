@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BR architectures</title>
+    <style>
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+        }
+        .navbar-right ul{
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            gap: 20px;
+        }
+        .navbar-right li a{
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
+    
     <script>
         // navbar
         const navbar=document.createElement("div");
@@ -17,9 +34,39 @@
 
         const right=document.createElement('div');
         right.className="navbar-right";
-        right.innerHTML=<ul><li>Projects</li><li>About</li><li>Contact</li></ul>
-
+        right.innerHTML = "<ul><li><a href='#'>Projects</a></li><li><a href='#'>About</a></li><li><a href='#'>Contact</a></li></ul>";
         
-    </script>
+        const navbarContainer=document.createElement("div");
+        navbarContainer.id="navbarContainer";
+
+        //banner
+        const bgImage=document.createElement("img");
+        bgImage.src="pics/architect.jpg";
+
+        const bannerContainer=document.createElement("div");
+        bannerContainer.append(bgImage);
+
+        // projects
+        const projectContainer=document.createElement("div");
+        const projectHeading=document.createElement("h2");
+        projectHeading.innerText="Projects"; 
+        const line=document.createElement("hr");
+        projectContainer.append(projectHeading,line);
+    
+        
+
+
+
+
+
+        const container=document.createElement("div")
+
+
+        navbar.append(left,right)
+        // navbar.append(right)
+        navbarContainer.append(navbar)
+        container.append(navbarContainer,bannerContainer,projectContainer)
+        document.body.append(container)
+        </script>
 </body>
 </html>

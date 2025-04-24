@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color generator</title>
+</head>
+<body>
+    <button onclick="fun()">click for color change</button>
+    <button onclick="fun2()">click for a random quote</button>
+    <div></div>
+</body>
+<script>
+    let arr=["red","blue","yellow","orange","pink","lightgreen"]
+    count=0
+    function fun(){
+        if (count==arr.length){
+            count=0
+        }
+        document.body.style.background=arr[count]
+        count++
+    }
+    let arr2=["Sis, your potential is limitless. Don’t play small.","Remind her who she is — a queen, a force, a fire.","You’re magic. Don’t let anyone make you forget that.","You’re not just a vibe, you’re the whole energy.","You’re not lost, babe — you’re just in the middle of your comeback.","She’s beauty, she’s grace, she’ll take up space."]
+    temp=0
+    function fun2(){
+        if (temp==arr2.length){
+            temp=0
+        }
+        var div=document.querySelector("div")
+        div.innerHTML=arr2[temp];
+        temp++
+    }
+    //dark mode and light mode
+    var h1=document.createElement("h1")
+    h1.innerText="here is a little code using dom"
+     var btn=document.createElement("button")
+     btn.innerText="click for dark mode"
+     let dark=false
+     btn.addEventListener("click", function() {
+        if(!dark){
+            document.body.style.background="black"
+            document.body.style.color="white"
+            console.log("dark mode");
+        }
+        else{
+            document.body.style.background="white"
+            document.body.style.color="black"
+            console.log("light mode");
+        }
+        dark=!dark
+     })
+     document.body.append(btn)
+     document.body.append(h1)
+
+
+</script>
+</html>
