@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 3 of js series</title>
+</head>
+<body>
+    <script>
+        // Task 1: Day of the Week Message Scenario: Develop a webpage that displays a special message based on the current day of the week.
+        let day=prompt("Enter the day:")
+        if(day=="Monday" || day=="monday"){
+            console.log("Start your week strong!");
+        }
+        else if(day=="Tuesday" || day=="tuesday"){
+            console.log("Keep going!");
+        }
+        else if(day=="Wednesday" ||day=="wednesday"){
+            console.log("Halfway there!");
+        }
+        else if(day=="Thursday" || day=="thursday"){
+            console.log("Almost the weekend");
+        }
+        else if(day=="Friday" ||day== "friday"){
+            console.log("Happy Friday");
+        }
+        else if(day=="Saturday" || day=="saturday" ||day== "Sunday" || day=="sunday"){
+            console.log("Enjoy your weekend!");
+        }
+        else{
+            console.log("Invalid day entered!");
+        }
+
+        // Task 2: Traffic Light Simulation Scenario: Simulate a traffic light system.
+        let lightColor=prompt("enter any color from red, green and yellow:")
+        if(lightColor=="red"||lightColor=="Red"){
+            console.log("Stop")
+        } else if(lightColor=="yellow"||lightColor=="Yellow"){
+            console.log("Get ready!")
+        }else if(lightColor=="green"||lightColor=="Green"){
+            console.log("Go")
+        }else{
+            console.log("invalid colour")
+        }
+
+        // Task 3: Discount Calculator Scenario: Calculate the discount based on the total purchase amount.
+        let amount=+prompt("Enter the amount:")
+        if(amount<50){
+            console.log("No discount");
+         }else if(amount>=50 && amount<=100){
+                        console.log("5% discount");
+          }else if(amount>=101 && amount<=200){
+                        console.log("10% discount");
+          }else if(amount>200){
+            console.log("15% discount");
+          }else{
+            console.log("bye bye from the shop")
+          }
+
+          
+        // Task 4: Restaurant Menu Scenario: You are developing a restaurant menu system that provides the price of a dish based on the dish name.
+          let dish=prompt("Enter the dish name:")
+          switch (dish) {
+                case "Biriyani":
+                console.log("price = 180");
+                break;
+                case "shawarma":
+                console.log("price = 100");
+                break;
+                case "fried rice":
+                console.log("price = 120");
+                break;
+                case "veg pula":
+                console.log("price = 90");
+                break;
+            default:
+                console.log("Dish unavailable");
+                break;
+          }
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //reverse a string input: hello output : olleh
+        let str="olleh";
+        let reversed=""
+        for(i=str.length-1;i>=0;i--){
+            reversed+=str[i]
+        }
+        console.log(reversed);
+        
+
+        // find a even numbers in an array - [23,54,67,64,46,95,98]
+        debugger;
+        let nums=[23,54,67,64,46,95,98]
+        for(i=0;i<nums.length;i++){
+            if(nums[i]%2===0){
+                console.log(nums[i]);
+                
+            }
+        }
+
+        // find a max in a given number 
+            // str="258309"
+            // max=9
+            // maxindex=5
+            let str1="258309";
+            let max_digit=str1[0];
+            let max_index=str1[0];
+
+            for(i=1;i<str1.length;i++){
+                if(str1[i]>max_digit){
+                    max_digit=str1[i];
+                    max_index=i;
+                }
+            }
+            console.log("max digit = ",max_digit);
+            console.log("max index = ",max_index);
+    // find a prime numbers upto 2-50
+            for(i =2;i<=50;i++){
+                let flag=true
+                for(num=2;num<=i**0.5;num++){
+                    if(i% num===0){
+                        flag=false;
+                        break;
+                    }
+                }
+                if (flag){
+                   console.log(i);
+                } 
+            }
+
+    // iterate an object values and keys using for of loop
+            let student={
+                name:"sathwika",
+                age:19,
+                city:"hyd"
+            };
+            for([key,value] of Object.entries(student)){
+                console.log(key,value); 
+            }
+            
+
+    </script>
+</body>
+</html>

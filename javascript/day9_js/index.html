@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume using js</title>
+</head>
+<body>
+    <h1 id="name"></h1>
+    <p id="contact"></p>
+    <h2 id="skills">skills</h2>
+    <h2>Education</h2>
+    <script>
+
+        let name=document.getElementById("name")
+        name.innerText="sathwika";
+        document.getElementById("contact").innerText="bethusathwika@gmail.com";
+        document.getElementsByTagName("h2")[0].innerHTML="skills<ul><li>Html</li><li>css</li><li>js</li><li>python</li><li>react</li></ul>"
+        var listItems=document.querySelectorAll("#skills ul li");
+        for(var i=0;i<listItems.length;i++){
+            listItems[i].style.listStyleType="none";
+            listItems[i].style.fontSize="12px";
+        }
+        document.getElementsByTagName("h2")[1].innerText="Education"
+
+    </script>
+</body>
+</html>
